@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Subway.Models
 {
-    public class ISandwich
+    public interface ISandwich
     {
-        string Descripcion { get;  }
+        string? Descripcion { get; }
         double Precio { get; }
-        string Tamaño { get; }
+        string? Tamaño { get; }
     }
 }

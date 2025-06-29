@@ -11,8 +11,9 @@ namespace Subway.Models
         public abstract string Descipcion { get; }
         public abstract double Precio { get; }
         public string Tamaño { get; protected set; }
+        public string? Descripcion => Descipcion;
 
-        protected SandwichBase (string tamaño)
+        protected SandwichBase(string tamaño)
         {
             Tamaño = tamaño;
         }
